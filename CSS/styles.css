@@ -1,0 +1,184 @@
+/* line 1, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
+* {
+  margin: 0;
+}
+
+/* line 5, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 2rem;
+  font-family: serif;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "nav" "dash";
+}
+
+/* ============= HEADER =================== */
+/* line 2, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.title {
+  align-items: center;
+  background-color: #7477bf;
+  color: #f2f2f2;
+  display: flex;
+  grid-area: header;
+  max-height: 10vh;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+/* line 12, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.hash {
+  transform: scale(0.04, 2);
+  margin: 0 0;
+}
+
+/* line 16, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.prof-pic {
+  border-radius: 50%;
+  height: 5vh;
+}
+
+/* line 21, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.bell {
+  fill: #f2f2f2;
+  height: 9vh;
+  width: 20px;
+  margin: 0px;
+}
+
+/* line 27, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.bell:hover {
+  animation: bell 1s ease-in-out backwards;
+}
+
+@keyframes bell {
+  0% {
+    transform: rotate(10deg) scale(1.2);
+    fill: lime;
+  }
+  50% {
+    transform: rotate(-10deg) scale(0.8);
+    fill: #f2f2f2;
+  }
+  100% {
+    transform: rotate(5deg) scale(1.1);
+    fill: lime;
+  }
+}
+
+/* ======= Main Nav =================== */
+/* line 2, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
+.main-nav {
+  padding: 0 40px;
+  display: flex;
+  background-color: #4d4c72;
+  grid-area: nav;
+  justify-content: space-around;
+}
+
+/* line 9, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
+.nav-icon {
+  height: 8vh;
+  fill: #f2f2f2;
+  width: 35px;
+}
+
+/* ============== DASHBOARD =============== */
+/* line 2, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+main {
+  max-width: 100%;
+}
+
+/* line 5, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+.dash-board {
+  grid-area: dash;
+  width: 100vw;
+  margin: 0;
+}
+
+/* line 11, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* line 17, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+.wrap h3 {
+  padding: 10px;
+  margin: 0 0 0 5px;
+  flex-basis: 35%;
+}
+
+/* line 22, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+.sub-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* line 27, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+.box {
+  flex-basis: 60%;
+  border-bottom: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  border-radius: 0 5px;
+  background-color: #f2f2f2;
+}
+
+/* line 38, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+.alert {
+  max-width: 90%;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+/* line 44, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+.alert-banner {
+  background-color: #7477bf;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 15px;
+  border-radius: 5px;
+  margin-top: 0;
+  align-items: center;
+}
+
+/* ======= charts ========== */
+/* line 2, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
+.container {
+  margin: 30px 15px;
+}
+
+/* line 5, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
+#trafficChart,
+#dailyChart {
+  max-width: 100%;
+  margin: 50px 0px;
+}
+
+/* line 10, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
+.chart-link-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 14, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
+.chart-link {
+  text-decoration: none;
+  color: black;
+  padding: 1px 10px;
+  border-radius: 15px;
+}
+
+/* line 19, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
+.chart-link:hover {
+  background-color: chartreuse;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,22 @@
+/* ======= charts ========== */
+.container {
+  margin: 30px 15px;
+}
+#trafficChart,
+#dailyChart {
+  max-width: 100%;
+  margin: 50px 0px;
+}
+.chart-link-container {
+  display: flex;
+  justify-content: space-around;
+}
+.chart-link {
+  text-decoration: none;
+  color: black;
+  padding: 1px 10px;
+  border-radius: 15px;
+  &:hover {
+    background-color: chartreuse;
+  }
+}

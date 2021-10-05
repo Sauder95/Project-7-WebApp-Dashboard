@@ -1,0 +1,44 @@
+/* ============= HEADER =================== */
+.title {
+  align-items: center;
+  background-color: $primary-color;
+  color: #f2f2f2;
+  display: flex;
+  grid-area: header;
+  max-height: 10vh;
+  justify-content: space-around;
+  width: 100vw;
+}
+.hash {
+  transform: scale(0.04, 2);
+  margin: 0 0;
+}
+.prof-pic {
+  border-radius: 50%;
+  height: 5vh;
+}
+
+.bell {
+  fill: $accent-color;
+  height: 9vh;
+  width: 20px;
+  margin: 0px;
+}
+.bell:hover {
+  animation: bell 1s ease-in-out backwards;
+}
+
+@keyframes bell {
+  0% {
+    transform: rotate(10deg) scale(1.2);
+    fill: lime;
+  }
+  50% {
+    transform: rotate(-10deg) scale(0.8);
+    fill: #f2f2f2;
+  }
+  100% {
+    transform: rotate(5deg) scale(1.1);
+    fill: lime;
+  }
+}

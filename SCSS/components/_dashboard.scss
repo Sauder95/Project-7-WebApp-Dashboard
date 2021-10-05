@@ -1,0 +1,53 @@
+/* ============== DASHBOARD =============== */
+main {
+  max-width: 100%;
+}
+.dash-board {
+  grid-area: dash;
+  width: 100vw;
+  margin: 0;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.wrap h3 {
+  padding: 10px;
+  margin: 0 0 0 5px;
+  flex-basis: 35%;
+}
+.sub-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.box {
+  flex-basis: 60%;
+
+  border-bottom: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  border-radius: 0 5px;
+  background-color: #f2f2f2;
+}
+
+// ============== ALERT ============//
+
+.alert {
+  max-width: 90%;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.alert-banner {
+  background-color: #7477bf;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 15px;
+  border-radius: 5px;
+  margin-top: 0;
+  align-items: center;
+}
