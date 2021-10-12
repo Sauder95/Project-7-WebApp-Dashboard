@@ -1,0 +1,25 @@
+// ============= MESSENEGER =================// 
+
+.messagenger{
+    h4 {
+        margin-bottom: 10px;
+    }
+}
+#message-form {
+display: flex;
+flex-direction: column;
+}
+
+.search-input, .message-user {
+    background-color:$accent-color;
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: 1px solid $border-hr-color;
+    margin-bottom: 15px;
+}
+.send-btn {
+    width: 100%;
+    background-color: $primary-color;
+    border-radius: 5px;
+    color: $accent-color;
+}

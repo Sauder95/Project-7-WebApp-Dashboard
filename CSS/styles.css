@@ -9,12 +9,26 @@ body {
   box-sizing: border-box;
   font-size: 16px;
   line-height: 2rem;
-  font-family: serif;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: "header" "nav" "dash";
+}
+
+/* line 22, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
+hr {
+  border: 1px solid #d9d9d9;
+}
+
+/* line 27, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
+.container {
+  margin: 15px 15px 20px;
+}
+
+/* line 29, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
+.container h4 {
+  margin: 0px 0px 30px;
 }
 
 /* ============= HEADER =================== */
@@ -88,40 +102,40 @@ body {
 }
 
 /* ============== DASHBOARD =============== */
-/* line 2, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+/* line 2, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
 main {
   max-width: 100%;
 }
 
-/* line 5, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+/* line 5, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
 .dash-board {
   grid-area: dash;
   width: 100vw;
   margin: 0;
 }
 
-/* line 11, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+/* line 11, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
 .wrap {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-/* line 17, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+/* line 17, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
 .wrap h3 {
   padding: 10px;
   margin: 0 0 0 5px;
   flex-basis: 35%;
 }
 
-/* line 22, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+/* line 22, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
 .sub-title {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-/* line 27, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+/* line 27, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
 .box {
   flex-basis: 60%;
   border-bottom: 1px solid #d9d9d9;
@@ -130,14 +144,14 @@ main {
   background-color: #f2f2f2;
 }
 
-/* line 38, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+/* line 38, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
 .alert {
   max-width: 90%;
   cursor: pointer;
   margin: 20px auto;
 }
 
-/* line 44, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashboard.scss */
+/* line 44, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
 .alert-banner {
   background-color: #7477bf;
   color: white;
@@ -150,35 +164,158 @@ main {
 }
 
 /* ======= charts ========== */
-/* line 2, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
-.container {
-  margin: 30px 15px;
+/* line 3, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
+canvas {
+  margin: 25px 0px;
 }
 
-/* line 5, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
-#trafficChart,
-#dailyChart {
-  max-width: 100%;
-  margin: 50px 0px;
-}
-
-/* line 10, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
-.chart-link-container {
+/* line 6, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
+ul.link-bar {
+  padding-left: 0;
   display: flex;
+  list-style-type: none;
   justify-content: space-around;
 }
 
-/* line 14, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
+/* line 12, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
 .chart-link {
-  text-decoration: none;
   color: black;
   padding: 1px 10px;
   border-radius: 15px;
 }
 
-/* line 19, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
-.chart-link:hover {
-  background-color: chartreuse;
+/* line 17, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_charts.scss */
+.active {
+  background-color: #81c98f;
+}
+
+/* line 3, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_socialMedia.scss */
+.social-card {
+  width: 90%;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  border: 0.25px solid #d9d9d9;
+  display: flex;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+/* line 14, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_socialMedia.scss */
+.social-svg {
+  fill: #7477bf;
+  width: 60px;
+}
+
+/* line 18, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_socialMedia.scss */
+.social-details {
+  margin-left: 20px;
+}
+
+/* line 20, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_socialMedia.scss */
+.social-details h4 {
+  color: #7477bf;
+  margin-bottom: 0;
+}
+
+/* line 24, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_socialMedia.scss */
+.social-details p {
+  font-size: 2.5rem;
+  color: #777777;
+}
+
+/* line 5, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
+.new-members div:nth-last-child(1),
+.recent-activity div:nth-last-child(1) {
+  border-bottom: none;
+}
+
+/* line 10, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
+.members-card {
+  padding: 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #d9d9d9;
+  line-height: 1rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* line 20, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
+.members-card h5 {
+  font-size: 1.2rem;
+}
+
+/* line 23, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
+.members-card p {
+  font-size: 0.8rem;
+}
+
+/* line 26, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
+.members-card a {
+  text-decoration: none;
+  color: #7477bf;
+}
+
+/* line 32, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
+.user-pic {
+  border-radius: 50%;
+  height: 10vh;
+}
+
+/* line 4, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
+.messagenger h4 {
+  margin-bottom: 10px;
+}
+
+/* line 8, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
+#message-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 13, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
+.search-input, .message-user {
+  background-color: #f2f2f2;
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 15px;
+}
+
+/* line 20, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
+.send-btn {
+  width: 100%;
+  background-color: #7477bf;
+  border-radius: 5px;
+  color: #f2f2f2;
+}
+
+/* line 5, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+.check-boxes {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 10, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+.switch-light {
+  width: 300px;
+}
+
+/* line 17, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+.save-cancel-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 20, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+.save-cancel-wrap button {
+  width: 130px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background-color: #7477bf;
 }
 
 /*# sourceMappingURL=styles.css.map */

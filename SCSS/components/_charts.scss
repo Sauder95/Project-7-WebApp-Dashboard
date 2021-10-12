@@ -1,22 +1,19 @@
 /* ======= charts ========== */
-.container {
-  margin: 30px 15px;
+
+canvas {
+  margin: 25px 0px;
 }
-#trafficChart,
-#dailyChart {
-  max-width: 100%;
-  margin: 50px 0px;
-}
-.chart-link-container {
+ul.link-bar {
+  padding-left: 0;
   display: flex;
+  list-style-type: none;
   justify-content: space-around;
 }
 .chart-link {
-  text-decoration: none;
   color: black;
   padding: 1px 10px;
   border-radius: 15px;
-  &:hover {
-    background-color: chartreuse;
-  }
+}
+.active {
+  background-color: $high-light-color;
 }

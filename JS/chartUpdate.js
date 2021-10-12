@@ -1,4 +1,4 @@
-=========== CHART UPDATE FUNCTION ==========//
+//=========== CHART UPDATE FUNCTION ==========//
 
 let trafficLinks = document.querySelectorAll(".chart-link");
 
@@ -11,17 +11,18 @@ const updateChart = (chart, newData) => {
   });
 };
 
-trafficLinks.addEventListener("click", (e) => {
-  e.siblings.classList.remove("active");
-  e.classList.add("active");
-
-  if (e.textContent == "hourly") {
-    updateChart(hourlyTraffic, hourlyData);
-  } else if (e.textContent == "daily") {
-    updateChart(dailyTraffic, dailyData);
-  } else if (e.textContent == "weekly") {
-    updateChart(weeklyTraffic, weeklyData);
-  } else if (e.textContent == "monthly") {
-    updateChart(monthlyTraffic, monthlyData);
-  }
+trafficLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    trafficLinks.forEach((link) => link.classList.remove("active"));
+    this.classList.add("active");
+    if (link.textContent === "Hourly") {
+      updateChart(trafficChart, hourlyData);
+    } else if (link.textContent === "Daily") {
+      updateChart(trafficChart, dailyData);
+    } else if (link.textContent === "Weekly") {
+      updateChart(trafficChart, weeklyData);
+    } else if (link.textContent === "Monthly") {
+      updateChart(trafficChart, monthlylyData);
+    }
+  });
 });

@@ -1,0 +1,27 @@
+// =============== SETTINGS ===============//
+.settings {
+
+}
+.check-boxes {
+    display: flex;
+    flex-direction: row;
+}
+
+.switch-light {
+    width: 300px;
+}
+.time-zone {
+
+}
+
+.save-cancel-wrap {
+    display: flex;
+    justify-content: space-around;
+    button {
+        width: 130px;
+        padding:  5px;
+        border-radius: 5px;
+        border: 1px solid $border-hr-color;
+        background-color: $primary-color;
+    }
+}

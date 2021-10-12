@@ -1,0 +1,28 @@
+// ===============SOCIAL MEDIA =================//
+
+.social-card {
+  width: 90%;
+  background-color: $accent-color;
+  border-radius: 10px;
+  border: 0.25px solid $border-hr-color;
+  display: flex;
+  padding: 15px;
+
+  margin: 10px 0;
+}
+
+.social-svg {
+  fill: $primary-color;
+  width: 60px;
+}
+.social-details {
+  margin-left: 20px;
+  h4 {
+    color: $primary-color;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 2.5rem;
+    color: $typography;
+  }
+}
