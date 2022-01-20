@@ -24,6 +24,12 @@ main {
   justify-content: space-between;
   width: 100%;
 }
+.dash-grid-title {
+  grid-area: title;
+}
+.social {
+  grid-area: social;
+}
 .box {
   flex-basis: 60%;
 
@@ -52,23 +58,22 @@ main {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .dash-board {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 110px 1.5fr 1fr 1fr;
+    max-width: 100%;
+    grid-template-areas:
+      "title title"
+      "traffic traffic"
+      "mobile mobile"
+      "social social";
+    justify-items: stretch;
+  }
 
-
-
-
-
-
-@media  screen and (min-width: 768px) {
-
-
-.dash-board {
-  max-width: 80%;
-  margin-left: 40px;
-  margin-right: 0;
-}
-
-.box {
-  flex-basis: 82%;
-  max-width: 60%;
-}
+  .box {
+    flex-basis: 82%;
+    max-width: 60%;
+  }
 }

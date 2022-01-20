@@ -9,8 +9,6 @@ body {
   font-size: 16px;
   line-height: 2rem;
 
-  // width: 100vw;
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -26,9 +24,11 @@ hr {
 // =================== MAIN CONTAINER ================//
 
 .container {
-  width: 100%;
-  margin: 15px 0px 20px;
-  padding: 5px;
+  margin: 15px auto 20px;
+  padding: 10px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
   h4 {
     margin: 0px 0px 30px;
   }
@@ -36,13 +36,13 @@ hr {
 
 @media (min-width: 768px) {
   body {
-    grid-template-columns: 70px auto;
-    grid-template-rows: repeat(1fr, auto);
+    grid-template-columns: 7% 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
       "header header"
       "nav dash";
   }
-  .container {
-    width: 83vw;
-  }
+  // .container {
+  //   width: 83vw;
+  // }
 }
