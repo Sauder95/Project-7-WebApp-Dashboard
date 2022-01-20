@@ -7,8 +7,7 @@ alertBanner.innerHTML = `
 `;
 
 alertBanner.addEventListener("click", (e) => {
-  const element = e.target;
-  if (element.classList.contains("alert-close")) {
+  if (e.target.classList.contains("alert-close")) {
     alertBanner.style.display = "none";
   }
 });

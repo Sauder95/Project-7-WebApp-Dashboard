@@ -4,6 +4,30 @@ let daily = document.getElementById("dailyChart").getContext("2d");
 let mobile = document.getElementById("mobileChart").getContext("2d");
 
 // ============ TRAFFIC CHART VARIABLES ===========================//
+let defaultData = {
+  labels: [
+    "16-22",
+    "23-29",
+    "30-5",
+    "6-12",
+    "13-19",
+    "20-26",
+    "27-3",
+    "4-10",
+    "11-17",
+    "18-24",
+    "25-31",
+  ],
+  datasets: [
+    {
+      data: [700, 1200, 1000, 200, 1500, 1650, 1350, 1800, 2250, 1500, 2500],
+      fill: true,
+      backgroundColor: ["rgba(116, 119, 191, 0.3)"],
+      borderColor: ["rgba(116, 119, 191, 1)"],
+      borderWidth: 1,
+    },
+  ],
+};
 
 let hourlyData = {
   labels: [
@@ -101,7 +125,7 @@ let trafficOptions = {
 
 let trafficChart = new Chart(traffic, {
   type: "line",
-  data: hourlyData,
+  data: defaultData,
   options: trafficOptions,
 });
 

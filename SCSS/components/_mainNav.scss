@@ -5,9 +5,33 @@
   background-color: $secondary-color;
   grid-area: nav;
   justify-content: space-around;
+  
 }
 .nav-icon {
   height: 8vh;
   fill: $accent-color;
   width: 35px;
+}
+
+@media  screen and (min-width: 768px) {
+  
+
+.main-nav {
+  flex-direction: column;
+  height: 100%;
+  width: 70px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 15px;
+}
+
+
+.nav-icon  {
+  margin-top: 1rem;
+}
+
+
+
+
+
 }

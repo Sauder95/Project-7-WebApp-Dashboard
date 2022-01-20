@@ -4,7 +4,7 @@ main {
 }
 .dash-board {
   grid-area: dash;
-  width: 100vw;
+  width: 100%;
   margin: 0;
 }
 
@@ -50,4 +50,25 @@ main {
   border-radius: 5px;
   margin-top: 0;
   align-items: center;
+}
+
+
+
+
+
+
+
+@media  screen and (min-width: 768px) {
+
+
+.dash-board {
+  max-width: 80%;
+  margin-left: 40px;
+  margin-right: 0;
+}
+
+.box {
+  flex-basis: 82%;
+  max-width: 60%;
+}
 }

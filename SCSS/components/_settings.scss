@@ -1,16 +1,49 @@
 // =============== SETTINGS ===============//
 .settings {
-
+   
 }
 .check-boxes {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    overflow: hidden;
 }
 
+
 .switch-light {
-    width: 300px;
+    width: 100px;
 }
+input[type="checkbox"] {
+    background-color: $primary-color;
+    
+
+    
+}
+input:checked[type="checkbox"] {
+    background-color: $primary-color;
+}
+
+
+
+
 .time-zone {
+    width: 100%;
+    cursor: pointer;
+    margin: 1rem auto;
+    background-color: $accent-color;
+    color: $typography;
+    padding: 5px 12px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: 1px solid $border-hr-color;
+    appearance: none;
+    background-image: url("../../images/downward-arrow.png");
+    background-repeat: no-repeat;
+    background-position:  96% 65%;
+    background-size: 7%;
 
 }
 
@@ -19,7 +52,7 @@
     justify-content: space-around;
     button {
         width: 130px;
-        padding:  5px;
+        // padding:  5px;
         border-radius: 5px;
         border: 1px solid $border-hr-color;
         background-color: $primary-color;

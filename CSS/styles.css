@@ -1,34 +1,53 @@
+/* line 1, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_typography.scss */
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
 /* line 1, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
 * {
   margin: 0;
 }
 
-/* line 5, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
+/* line 6, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
 body {
   margin: 0;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 2rem;
-  width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: "header" "nav" "dash";
 }
 
-/* line 22, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
+/* line 23, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
 hr {
   border: 1px solid #d9d9d9;
 }
 
-/* line 27, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
+/* line 28, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
 .container {
-  margin: 15px 15px 20px;
+  width: 100%;
+  margin: 15px 0px 20px;
+  padding: 5px;
 }
 
-/* line 29, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
+/* line 32, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
 .container h4 {
   margin: 0px 0px 30px;
+}
+
+@media (min-width: 768px) {
+  /* line 38, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
+  body {
+    grid-template-columns: 70px auto;
+    grid-template-rows: repeat(1fr, auto);
+    grid-template-areas: "header header" "nav dash";
+  }
+  /* line 45, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
+  .container {
+    width: 83vw;
+  }
 }
 
 /* ============= HEADER =================== */
@@ -40,23 +59,41 @@ hr {
   display: flex;
   grid-area: header;
   max-height: 10vh;
-  justify-content: space-around;
   width: 100vw;
 }
 
-/* line 12, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+/* line 10, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.title h2 {
+  margin-left: 2vw;
+}
+
+/* line 15, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+h2 span {
+  font-weight: 300;
+}
+
+/* line 18, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
 .hash {
   transform: scale(0.04, 2);
   margin: 0 0;
 }
 
-/* line 16, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+/* line 22, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
 .prof-pic {
   border-radius: 50%;
   height: 5vh;
 }
 
-/* line 21, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+/* line 27, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.info-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 6vw;
+}
+
+/* line 34, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
 .bell {
   fill: #f2f2f2;
   height: 9vh;
@@ -64,9 +101,21 @@ hr {
   margin: 0px;
 }
 
-/* line 27, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+/* line 40, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
 .bell:hover {
   animation: bell 1s ease-in-out backwards;
+}
+
+/* line 44, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.notification-bubble {
+  display: block;
+  position: relative;
+  bottom: 2vh;
+  right: 4vw;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: red;
 }
 
 @keyframes bell {
@@ -84,6 +133,13 @@ hr {
   }
 }
 
+@media screen and (min-width: 768px) {
+  /* line 75, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+  .info-bar {
+    justify-content: space-between;
+  }
+}
+
 /* ======= Main Nav =================== */
 /* line 2, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
 .main-nav {
@@ -94,11 +150,27 @@ hr {
   justify-content: space-around;
 }
 
-/* line 9, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
+/* line 10, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
 .nav-icon {
   height: 8vh;
   fill: #f2f2f2;
   width: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 19, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
+  .main-nav {
+    flex-direction: column;
+    height: 100%;
+    width: 70px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 15px;
+  }
+  /* line 29, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
+  .nav-icon {
+    margin-top: 1rem;
+  }
 }
 
 /* ============== DASHBOARD =============== */
@@ -110,7 +182,7 @@ main {
 /* line 5, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
 .dash-board {
   grid-area: dash;
-  width: 100vw;
+  width: 100%;
   margin: 0;
 }
 
@@ -161,6 +233,20 @@ main {
   border-radius: 5px;
   margin-top: 0;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 64, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
+  .dash-board {
+    max-width: 80%;
+    margin-left: 40px;
+    margin-right: 0;
+  }
+  /* line 70, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
+  .box {
+    flex-basis: 82%;
+    max-width: 60%;
+  }
 }
 
 /* ======= charts ========== */
@@ -245,23 +331,43 @@ ul.link-bar {
 /* line 20, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
 .members-card h5 {
   font-size: 1.2rem;
+  margin-bottom: 0.3rem;
 }
 
-/* line 23, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
+/* line 24, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
 .members-card p {
   font-size: 0.8rem;
 }
 
-/* line 26, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
+/* line 27, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
 .members-card a {
   text-decoration: none;
   color: #7477bf;
 }
 
-/* line 32, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
+/* line 33, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
 .user-pic {
   border-radius: 50%;
   height: 10vh;
+}
+
+@media (min-width: 768px) {
+  /* line 39, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
+  .members-card {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+  /* line 44, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
+  .name-email-wrap {
+    width: 80%;
+    justify-content: space-between;
+  }
+  /* line 47, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_newMembers.scss */
+  .name-email-wrap div {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* line 4, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
@@ -296,23 +402,55 @@ ul.link-bar {
 .check-boxes {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  overflow: hidden;
 }
 
-/* line 10, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+/* line 16, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
 .switch-light {
-  width: 300px;
+  width: 100px;
 }
 
-/* line 17, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+/* line 19, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+input[type="checkbox"] {
+  background-color: #7477bf;
+}
+
+/* line 25, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+input:checked[type="checkbox"] {
+  background-color: #7477bf;
+}
+
+/* line 32, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+.time-zone {
+  width: 100%;
+  cursor: pointer;
+  margin: 1rem auto;
+  background-color: #f2f2f2;
+  color: #777777;
+  padding: 5px 12px;
+  padding-right: 15px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  appearance: none;
+  background-image: url("../../images/downward-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 96% 65%;
+  background-size: 7%;
+}
+
+/* line 50, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
 .save-cancel-wrap {
   display: flex;
   justify-content: space-around;
 }
 
-/* line 20, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+/* line 53, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
 .save-cancel-wrap button {
   width: 130px;
-  padding: 5px;
   border-radius: 5px;
   border: 1px solid #d9d9d9;
   background-color: #7477bf;

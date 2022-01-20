@@ -6,8 +6,14 @@
   display: flex;
   grid-area: header;
   max-height: 10vh;
-  justify-content: space-around;
   width: 100vw;
+  h2 {
+    margin-left: 2vw;
+  }
+  
+}
+h2 span {
+  font-weight: 300;
 }
 .hash {
   transform: scale(0.04, 2);
@@ -16,8 +22,15 @@
 .prof-pic {
   border-radius: 50%;
   height: 5vh;
-}
 
+}
+.info-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 6vw;
+}
 .bell {
   fill: $accent-color;
   height: 9vh;
@@ -26,6 +39,17 @@
 }
 .bell:hover {
   animation: bell 1s ease-in-out backwards;
+}
+
+.notification-bubble {
+  display: block;
+  position: relative;
+  bottom: 2vh;
+  right: 4vw;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: red;
 }
 
 @keyframes bell {
@@ -41,4 +65,16 @@
     transform: rotate(5deg) scale(1.1);
     fill: lime;
   }
+}
+
+
+
+
+@media  screen and (min-width: 768px) {
+
+.info-bar {
+  justify-content: space-between;
+}
+
+
 }
