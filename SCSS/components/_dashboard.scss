@@ -27,9 +27,7 @@ main {
 .dash-grid-title {
   grid-area: title;
 }
-.social {
-  grid-area: social;
-}
+
 .box {
   flex-basis: 60%;
 
@@ -62,7 +60,7 @@ main {
   .dash-board {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 110px 1.5fr 1fr 1fr;
+    grid-template-rows: auto 1.5fr auto auto;
     max-width: 100%;
     grid-template-areas:
       "title title"
