@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="CSS/normalize.css" />
@@ -105,28 +105,28 @@
           <div class="traffic-links">
             <h4>TRAFFIC</h4>
             <ul class="link-bar">
-              <li class="chart-link active">Hourly</li>
-              <li class="chart-link">Daily</li>
-              <li class="chart-link">Weekly</li>
-              <li class="chart-link">Monthly</li>
+              <li class="chart-link active"><h5>Hourly</h5></li>
+              <li class="chart-link"><h5>Daily</h5></li>
+              <li class="chart-link"><h5>Weekly</h5></li>
+              <li class="chart-link"><h5>Monthly</h5></li>
             </ul>
           </div>
 
           <canvas id="trafficChart"></canvas>
         </div>
-
+        <hr class=".hide-hr" />
         <div class="container chart-2">
           <h4>DAILY TRAFFIC</h4>
 
           <canvas id="dailyChart"></canvas>
         </div>
-
+        <hr class=".hide-hr" />
         <div class="container chart-3">
           <h4>MOBLIES USERS</h4>
 
           <canvas id="mobileChart"></canvas>
         </div>
-
+        <hr class=".hide-hr" />
         <div class="container social">
           <h4>SOCIAL STATS</h4>
           <div class="social-wrap">
@@ -178,7 +178,7 @@
           </div>
         </div>
       </section>
-
+      <hr />
       <section class="new-members">
         <div class="container">
           <h4>NEW MEMBERS</h4>
@@ -233,31 +233,40 @@
           <h4>RECENT ACTIVITY</h4>
           <div class="members-card">
             <img class="user-pic" src="images/member-1.jpg" alt="" />
-            <p>
-              Victoria Chambers commented on <strong>WebApps's SEO Tips</strong>
-            </p>
-            <p>4 hours ago</p>
+            <div class="name-email-wrap">
+              <p>
+                Victoria Chambers commented on
+                <strong>WebApps's SEO Tips</strong>
+              </p>
+              <p>4 hours ago</p>
+            </div>
           </div>
           <div class="members-card">
             <img class="user-pic" src="images/member-2.jpg" alt="" />
-            <p>
-              Dale Byrd liked the post
-              <strong>Facebook's Changes for 2021</strong>
-            </p>
-            <p>5 hours ago</p>
+            <div class="name-email-wrap">
+              <p>
+                Dale Byrd liked the post
+                <strong>Facebook's Changes for 2021</strong>
+              </p>
+              <p>5 hours ago</p>
+            </div>
           </div>
           <div class="members-card">
             <img class="user-pic" src="images/member-3.jpg" alt="" />
-            <p>
-              Dawn Wood commented on
-              <strong>Facebook's changes for 2021</strong>
-            </p>
-            <p>5 hours ago</p>
+            <div class="name-email-wrap">
+              <p>
+                Dawn Wood commented on
+                <strong>Facebook's changes for 2021</strong>
+              </p>
+              <p>5 hours ago</p>
+            </div>
           </div>
           <div class="members-card">
             <img class="user-pic" src="images/member-4.jpg" alt="" />
-            <p>Dan Oliver posted <strong>WebApps's SEO Tips</strong></p>
-            <p>1 day ago</p>
+            <div class="name-email-wrap">
+              <p>Dan Oliver posted <strong>WebApps's SEO Tips</strong></p>
+              <p>1 day ago</p>
+            </div>
           </div>
         </div>
       </section>

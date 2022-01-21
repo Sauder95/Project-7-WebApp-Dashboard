@@ -1,15 +1,16 @@
 /* ======= charts ========== */
 
 canvas {
-  margin: 25px 0px;
+  margin: 25px 0 20px;
   max-width: 100%;
-  border-bottom: 1px solid $accent-color;
 }
 ul.link-bar {
+  margin: auto;
   padding-left: 0;
   display: flex;
+  width: 90%;
   list-style-type: none;
-  // justify-content: space-around;
+  justify-content: space-around;
 }
 
 .chart-link {
@@ -19,8 +20,9 @@ ul.link-bar {
 }
 .active {
   background-color: $high-light-color;
+  color: $accent-color;
 }
-.chqrt-1 {
+.chart-1 {
   grid-area: traffic;
 }
 .chart-2 {
@@ -34,5 +36,8 @@ ul.link-bar {
   .traffic-links {
     display: flex;
     justify-content: space-between;
+  }
+
+  .hide-hr {
   }
 }
