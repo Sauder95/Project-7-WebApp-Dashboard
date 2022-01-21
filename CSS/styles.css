@@ -248,7 +248,7 @@ main {
     grid-template-columns: 50% 50%;
     grid-template-rows: 110px 1.5fr 1fr 1fr;
     max-width: 100%;
-    grid-template-areas: "title title" "traffic traffic" "mobile mobile" "social social";
+    grid-template-areas: "title title" "traffic traffic" "daily mobile" "social social";
     justify-items: stretch;
   }
   /* line 75, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
