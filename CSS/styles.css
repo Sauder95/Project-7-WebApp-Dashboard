@@ -57,42 +57,58 @@ hr {
   color: #f2f2f2;
   display: flex;
   grid-area: header;
+  justify-content: space-between;
   max-height: 10vh;
-  width: 100%;
+  padding: 0 10px;
 }
 
-/* line 10, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
-.title h2 {
-  margin-left: 2vw;
-}
-
-/* line 14, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+/* line 12, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
 h2 span {
   font-weight: 300;
 }
 
-/* line 17, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+/* line 15, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
 .hash {
-  transform: scale(0.04, 2);
+  transform: scale(0.04, 1);
   margin: 0 0;
 }
 
-/* line 21, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+/* line 19, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
 .prof-pic {
   border-radius: 50%;
   height: 5vh;
 }
 
-/* line 25, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+/* line 23, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
 .info-bar {
-  width: 100%;
+  width: 60%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   margin-left: 6vw;
 }
 
+/* line 29, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.info-bar svg {
+  margin-right: 15px;
+}
+
 /* line 32, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.info-bar p {
+  margin-right: 10px;
+}
+
+/* line 35, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.info-bar img {
+  margin-right: 10px;
+}
+
+/* line 38, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.info-bar h6 {
+  font-size: 14px;
+}
+
+/* line 42, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
 .bell {
   fill: #f2f2f2;
   height: 9vh;
@@ -100,21 +116,21 @@ h2 span {
   margin: 0px;
 }
 
-/* line 38, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+/* line 48, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
 .bell:hover {
   animation: bell 1s ease-in-out backwards;
 }
 
-/* line 42, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+/* line 52, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
 .notification-bubble {
   display: block;
   position: relative;
   bottom: 2vh;
-  right: 4vw;
+  right: 20px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: red;
+  background: lime;
 }
 
 @keyframes bell {
@@ -133,9 +149,13 @@ h2 span {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 69, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
-  .info-bar {
+  /* line 79, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+  .title {
     justify-content: space-between;
+  }
+  /* line 82, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+  .info-bar {
+    justify-content: flex-end;
   }
 }
 
@@ -326,7 +346,7 @@ ul.link-bar {
   border: 0.25px solid #d9d9d9;
   display: flex;
   padding: 10px;
-  margin: 10px 5px;
+  margin: 10px auto;
 }
 
 /* line 17, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_socialMedia.scss */
