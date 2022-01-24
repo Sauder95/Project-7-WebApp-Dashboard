@@ -36,6 +36,10 @@
   margin: 4px 0;
 }
 
+.hidden-arrow {
+  opacity: 0;
+}
+
 @media (min-width: 768px) {
   .members-card {
     flex-direction: row;
@@ -49,6 +53,12 @@
       display: flex;
       justify-content: space-between;
     }
+  }
+  .hidden-arrow {
+    opacity: 1;
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: $primary-color;
   }
 }
 
