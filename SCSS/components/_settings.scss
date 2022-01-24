@@ -41,5 +41,8 @@
         border-radius: 5px;
         border: 1px solid $border-hr-color;
         background-color: $primary-color;
+        &:last-child {
+            background-color: $border-hr-color;
+        }
     }
 }

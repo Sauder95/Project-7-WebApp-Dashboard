@@ -529,4 +529,9 @@ ul.link-bar {
   background-color: #7477bf;
 }
 
+/* line 44, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+.save-cancel-wrap button:last-child {
+  background-color: #d9d9d9;
+}
+
 /*# sourceMappingURL=styles.css.map */
