@@ -458,7 +458,8 @@ ul.link-bar {
 }
 
 /* line 13, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
-.search-input, .message-user {
+.search-input,
+.message-user {
   background-color: #f2f2f2;
   padding: 5px 12px;
   border-radius: 5px;
@@ -466,12 +467,13 @@ ul.link-bar {
   margin-bottom: 15px;
 }
 
-/* line 20, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
+/* line 21, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
 .send-btn {
   width: 100%;
   background-color: #7477bf;
   border-radius: 5px;
   color: #f2f2f2;
+  margin-bottom: 20px;
 }
 
 /* line 2, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */

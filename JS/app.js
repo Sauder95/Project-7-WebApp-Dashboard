@@ -37,11 +37,11 @@ send.addEventListener("click", () => {
 });
 
 // ============= LOCAL STORAGE ==========================
+
 const email = document.querySelector(".email-toggle");
 const public = document.querySelector(".profile-toggle");
 const timeZone = document.querySelector("#timeZone");
 const saveCancel = document.querySelector(".save-cancel-wrap");
-const defaultValue = document.querySelector(".defaultValue");
 
 recallStorage();
 
@@ -56,7 +56,7 @@ saveCancel.addEventListener("click", e => {
     sessionStorage.removeItem("timezone");
     email.checked = false;
     public.checked = false;
-    timeZone.value = defaultValue;
+    timeZone.selectedIndex = 0;
   }
 });
 
