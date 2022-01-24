@@ -1,6 +1,6 @@
 // =============== SETTINGS ===============//
 .settings {
-   
+    padding-bottom: 10px;
 }
 .check-boxes {
     display: flex;
@@ -9,25 +9,11 @@
     align-items: center;
     margin-bottom: 2rem;
     width: 100%;
-    overflow: hidden;
 }
-
 
 .switch-light {
     width: 100px;
 }
-input[type="checkbox"] {
-    background-color: $primary-color;
-    
-
-    
-}
-input:checked[type="checkbox"] {
-    background-color: $primary-color;
-}
-
-
-
 
 .time-zone {
     width: 100%;
@@ -42,9 +28,8 @@ input:checked[type="checkbox"] {
     appearance: none;
     background-image: url("../../images/downward-arrow.png");
     background-repeat: no-repeat;
-    background-position:  96% 65%;
+    background-position: 96% 65%;
     background-size: 7%;
-
 }
 
 .save-cancel-wrap {
@@ -52,7 +37,7 @@ input:checked[type="checkbox"] {
     justify-content: space-around;
     button {
         width: 130px;
-        // padding:  5px;
+        padding: 5px;
         border-radius: 5px;
         border: 1px solid $border-hr-color;
         background-color: $primary-color;

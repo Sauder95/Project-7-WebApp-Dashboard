@@ -29,8 +29,8 @@ hr {
 /* line 26, ../../GitHub/Project-7-WebApp-Dashboard/scss/base/_base.scss */
 .container {
   margin: auto;
-  padding: 5px;
-  width: 94%;
+  padding: 2px;
+  width: 90%;
   justify-content: center;
   align-items: center;
 }
@@ -121,7 +121,12 @@ h2 span {
   animation: bell 1s ease-in-out backwards;
 }
 
-/* line 52, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+/* line 51, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.hide {
+  opacity: 0;
+}
+
+/* line 55, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
 .notification-bubble {
   display: block;
   position: relative;
@@ -149,11 +154,11 @@ h2 span {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 79, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+  /* line 82, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
   .title {
     justify-content: space-between;
   }
-  /* line 82, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+  /* line 85, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
   .info-bar {
     justify-content: flex-end;
   }
@@ -469,6 +474,11 @@ ul.link-bar {
   color: #f2f2f2;
 }
 
+/* line 2, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+.settings {
+  padding-bottom: 10px;
+}
+
 /* line 5, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
 .check-boxes {
   display: flex;
@@ -477,25 +487,14 @@ ul.link-bar {
   align-items: center;
   margin-bottom: 2rem;
   width: 100%;
-  overflow: hidden;
 }
 
-/* line 16, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+/* line 14, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
 .switch-light {
   width: 100px;
 }
 
-/* line 19, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
-input[type="checkbox"] {
-  background-color: #7477bf;
-}
-
-/* line 25, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
-input:checked[type="checkbox"] {
-  background-color: #7477bf;
-}
-
-/* line 32, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+/* line 18, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
 .time-zone {
   width: 100%;
   cursor: pointer;
@@ -513,15 +512,16 @@ input:checked[type="checkbox"] {
   background-size: 7%;
 }
 
-/* line 50, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+/* line 35, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
 .save-cancel-wrap {
   display: flex;
   justify-content: space-around;
 }
 
-/* line 53, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
+/* line 38, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
 .save-cancel-wrap button {
   width: 130px;
+  padding: 5px;
   border-radius: 5px;
   border: 1px solid #d9d9d9;
   background-color: #7477bf;
