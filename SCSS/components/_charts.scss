@@ -36,5 +36,14 @@ ul.link-bar {
   .traffic-links {
     display: flex;
     justify-content: space-between;
+    h4 {
+      position: relative;
+      top: 0;
+      left: -6px;
+    }
+  }
+  ul.link-bar {
+    width: 40%;
+    margin: 0;
   }
 }

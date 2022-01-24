@@ -1,6 +1,7 @@
 // ============= MESSENEGER =================//
 
-.messagenger {
+.messenger {
+    grid-area: messenger;
     h4 {
         margin-bottom: 10px;
     }
@@ -8,6 +9,7 @@
 #message-form {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .search-input,
@@ -24,4 +26,5 @@
     border-radius: 5px;
     color: $accent-color;
     margin-bottom: 20px;
+    border: 1px solid $border-hr-color;
 }

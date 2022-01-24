@@ -3,6 +3,11 @@
   grid-area: social;
   max-width: 100%;
   padding-bottom: 15px;
+  h4 {
+    position: relative;
+    top: 0;
+    left: -6px;
+  }
 }
 
 .social-card {
@@ -10,10 +15,9 @@
   border-radius: 5px;
   border: 0.25px solid $border-hr-color;
   display: flex;
-
+  min-width: 23%;
   align-items: center;
   padding: 15px;
-
   margin: 10px auto;
   div:first-child {
     display: flex;
@@ -47,11 +51,17 @@
 
 @media (min-width: 768px) {
   .social-card {
+    flex-grow: 1;
     justify-content: center;
     margin: auto 5px;
   }
   .social-wrap {
     display: flex;
     justify-content: space-around;
+  }
+}
+@media (min-width: 1024px) {
+  .social-card {
+    justify-content: flex-start;
   }
 }

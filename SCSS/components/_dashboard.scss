@@ -16,7 +16,6 @@ main {
 
 .wrap h3 {
   padding: 10px;
-  margin-left: 15px;
   flex-basis: 35%;
 }
 .sub-title {
@@ -54,6 +53,9 @@ main {
   border-radius: 5px;
   margin-top: 0;
   align-items: center;
+  p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -78,6 +80,36 @@ main {
   .chart-1,
   .chart-2,
   .chart-3 {
-    border-bottom: 1px solid $border-hr-color;
+    border-bottom: 2px solid $border-hr-color;
+  }
+  .chart-3 {
+    border-left: 2px solid $border-hr-color;
+  }
+}
+@media (min-width: 1024px) {
+  .btm-grid {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "new-m recent-a"
+      "messenger settings";
+    justify-items: stretch;
+  }
+
+  .new-members {
+    // border-top: 2px solid $border-hr-color;
+    border-right: 2px solid $border-hr-color;
+  }
+  .recent-activity {
+    // border-top: 2px solid $border-hr-color;
+  }
+  .messenger {
+    border-top: 2px solid $border-hr-color;
+    border-right: 2px solid $border-hr-color;
+  }
+  .settings {
+    border-top: 2px solid $border-hr-color;
   }
 }

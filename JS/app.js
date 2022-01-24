@@ -6,7 +6,7 @@ const alertBubble = document.querySelector(".notification-bubble");
 
 alertBanner.innerHTML = `
 <div class= "alert-banner">
-    <p><strong>Alert:</strong> You have unread messages</p><p class="alert-close">x</p></>
+    <p><strong>Alert:</strong> You have unread messages</p><p class="alert-close"> x</p></>
     </div>
 `;
 
