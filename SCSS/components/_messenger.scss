@@ -14,11 +14,21 @@
 
 .search-input,
 .message-user {
-    background-color: $accent-color;
-    padding: 5px 12px;
-    border-radius: 5px;
+    background-color: $accent-color !important;
+    padding: 5px 10px !important;
+    border-radius: 5px !important;
     border: 1px solid $border-hr-color;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
+}
+
+#autoComplete.search-input {
+    width: 93%;
+    padding: 0px;
+    border: 1px solid $border-hr-color;
+    &::placeholder {
+        display: none;
+        color: $typography;
+    }
 }
 .send-btn {
     width: 100%;
@@ -27,4 +37,15 @@
     color: $accent-color;
     margin-bottom: 20px;
     border: 1px solid $border-hr-color;
+}
+
+@media (min-width: 768px) {
+    #autoComplete.search-input {
+        width: 97%;
+    }
+}
+@media (min-width: 1024px) {
+    #autoComplete.search-input {
+        width: 95%;
+    }
 }

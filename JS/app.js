@@ -49,10 +49,31 @@ list.addEventListener("click", e => {
 });
 
 // ============ MESSAGING ====================
-
+// let students = ["victoria chambers", "dale byrd", "dawn wood", "dan oliver"];
 const userName = document.querySelector("#search");
 const message = document.querySelector("#message");
 const send = document.querySelector(".send-btn");
+
+// import autoComplete from "@tarekraafat/autocomplete.js";
+
+const autoCompleteJS = new autoComplete({
+  placeHolder: "Search for Food...",
+  data: {
+    src: ["victoria chambers", "dale byrd", "dawn wood", "dan oliver"],
+    cache: true,
+  },
+  resultItem: {
+    highlight: true,
+  },
+  events: {
+    input: {
+      selection: event => {
+        const selection = event.detail.selection.value;
+        autoCompleteJS.input.value = selection;
+      },
+    },
+  },
+});
 
 send.addEventListener("click", () => {
   if ((userName.value === "") | (message.value === "")) {

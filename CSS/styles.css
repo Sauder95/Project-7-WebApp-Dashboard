@@ -611,14 +611,27 @@ ul.link-bar {
 /* line 15, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
 .search-input,
 .message-user {
-  background-color: #f2f2f2;
-  padding: 5px 12px;
-  border-radius: 5px;
+  background-color: #f2f2f2 !important;
+  padding: 5px 10px !important;
+  border-radius: 5px !important;
   border: 1px solid #d9d9d9;
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
 }
 
-/* line 23, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
+/* line 24, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
+#autoComplete.search-input {
+  width: 93%;
+  padding: 0px;
+  border: 1px solid #d9d9d9;
+}
+
+/* line 28, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
+#autoComplete.search-input::placeholder {
+  display: none;
+  color: #777777;
+}
+
+/* line 33, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
 .send-btn {
   width: 100%;
   background-color: #7477bf;
@@ -626,6 +639,20 @@ ul.link-bar {
   color: #f2f2f2;
   margin-bottom: 20px;
   border: 1px solid #d9d9d9;
+}
+
+@media (min-width: 768px) {
+  /* line 43, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
+  #autoComplete.search-input {
+    width: 97%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 48, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
+  #autoComplete.search-input {
+    width: 95%;
+  }
 }
 
 /* line 2, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
@@ -709,7 +736,7 @@ ul.link-bar {
   }
   /* line 68, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_settings.scss */
   .time-zone {
-    margin-top: 20px;
+    margin-top: 36px;
   }
 }
 
