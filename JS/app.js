@@ -30,12 +30,13 @@ const container = document.querySelector(".bell-pop-box");
 const list = document.querySelector(".pop-up-list");
 
 function popUp() {
+  list.classList.toggle("hide");
   if ((list.innerHTML = " ")) {
     list.innerHTML = `
 <li>
-     You have unread messages<p class="alert-close"> x</p></li>
+     <p><strong>Victoria:</strong> Hey hows it going?</p><p class="alert-close"> x</p></li>
 <li>
-     You have unread messages<p class="alert-close"> x</p></li>
+     <p><strong>Dale:</strong> Sorry i missed your laste message.</p></div><p class="alert-close"> x</p></li>
   `;
   } else {
     list.innerHTML = " ";
