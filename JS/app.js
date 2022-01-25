@@ -36,7 +36,7 @@ function popUp() {
 <li>
      <p><strong>Victoria:</strong> Hey hows it going?</p><p class="alert-close"> x</p></li>
 <li>
-     <p><strong>Dale:</strong> Sorry i missed your laste message.</p></div><p class="alert-close"> x</p></li>
+     <p><strong>Dale:</strong> Sorry i missed your last message.</p></div><p class="alert-close"> x</p></li>
   `;
   } else {
     list.innerHTML = " ";
