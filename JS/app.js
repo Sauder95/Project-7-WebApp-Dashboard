@@ -6,7 +6,7 @@ const alertBubble = document.querySelector(".notification-bubble");
 
 alertBanner.innerHTML = `
 <div class= "alert-banner">
-    <p><strong>Alert:</strong> You have unread messages</p><p class="alert-close"> x</p></>
+    <p><strong>Alert:</strong> You have unread messages</p><p class="alert-close">x</p></>
     </div>
 `;
 
@@ -34,9 +34,9 @@ function popUp() {
   if ((list.innerHTML = " ")) {
     list.innerHTML = `
 <li>
-     <p><strong>Victoria:</strong> Hey hows it going?</p><p class="alert-close"> x</p></li>
+     <p><strong>Victoria:</strong> Hey hows it going?</p><p class="alert-close">x</p></li>
 <li>
-     <p><strong>Dale:</strong> Sorry i missed your last message.</p></div><p class="alert-close"> x</p></li>
+     <p><strong>Dale:</strong> Sorry i missed your last message.</p></div><p class="alert-close">x</p></li>
   `;
   } else {
     list.innerHTML = " ";

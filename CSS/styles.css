@@ -298,13 +298,19 @@ main {
   font-size: 16px;
 }
 
+/* line 60, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
+.alert-close {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 62, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
+  /* line 66, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
   .box {
     flex-basis: 82%;
     max-width: 60%;
   }
-  /* line 66, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
+  /* line 70, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
   .dash-board {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -314,20 +320,20 @@ main {
     justify-items: stretch;
     gap: 0px 0px;
   }
-  /* line 80, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
+  /* line 84, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
   .chart-1,
   .chart-2,
   .chart-3 {
     border-bottom: 2px solid #d9d9d9;
   }
-  /* line 85, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
+  /* line 89, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
   .chart-3 {
     border-left: 2px solid #d9d9d9;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 90, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
+  /* line 94, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
   .btm-grid {
     display: grid;
     max-width: 100%;
@@ -336,16 +342,16 @@ main {
     grid-template-areas: "new-m recent-a" "messenger settings";
     justify-items: stretch;
   }
-  /* line 101, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
+  /* line 105, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
   .new-members {
     border-right: 2px solid #d9d9d9;
   }
-  /* line 108, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
+  /* line 112, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
   .messenger {
     border-top: 2px solid #d9d9d9;
     border-right: 2px solid #d9d9d9;
   }
-  /* line 112, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
+  /* line 116, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_dashBoard.scss */
   .settings {
     border-top: 2px solid #d9d9d9;
   }
