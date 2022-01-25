@@ -127,6 +127,26 @@ h2 span {
 }
 
 /* line 55, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.pop-up-list {
+  position: absolute;
+  top: 100px;
+  left: calc(50vw - 45vw);
+  width: 90vw;
+  padding-left: 0;
+  z-index: 1;
+}
+
+/* line 62, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+.pop-up-list li {
+  background-color: #4d4c72;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* line 72, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
 .notification-bubble {
   display: block;
   position: relative;
@@ -154,13 +174,26 @@ h2 span {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 82, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+  /* line 99, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
   .title {
     justify-content: space-between;
   }
-  /* line 85, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+  /* line 102, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
   .info-bar {
     justify-content: flex-end;
+  }
+  /* line 105, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+  .pop-up-list {
+    left: calc(50vw - 35vw + 19.5px);
+    width: 70vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 111, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_header.scss */
+  .pop-up-list {
+    left: calc(50vw - 35vw + 28px);
+    width: 70vw;
   }
 }
 

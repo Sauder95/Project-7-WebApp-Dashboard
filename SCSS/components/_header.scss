@@ -52,6 +52,23 @@ h2 span {
   opacity: 0;
 }
 
+.pop-up-list {
+  position: absolute;
+  top: 100px;
+  left: calc(50vw - 45vw);
+  width: 90vw;
+  padding-left: 0;
+  z-index: 1;
+  li {
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+}
+
 .notification-bubble {
   display: block;
   position: relative;
@@ -84,5 +101,15 @@ h2 span {
   }
   .info-bar {
     justify-content: flex-end;
+  }
+  .pop-up-list {
+    left: calc(50vw - 35vw + 19.5px);
+    width: 70vw;
+  }
+}
+@media (min-width: 1024px) {
+  .pop-up-list {
+    left: calc(50vw - 35vw + 28px);
+    width: 70vw;
   }
 }

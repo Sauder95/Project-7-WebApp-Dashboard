@@ -20,6 +20,31 @@ alertBanner.addEventListener("click", e => {
 
 bell.addEventListener("click", () => {
   alertBubble.classList.add("hide");
+
+  popUp();
+});
+
+// ============ DROP DOWN NOTIFICATIONS============\
+
+const container = document.querySelector(".bell-pop-box");
+const list = document.querySelector(".pop-up-list");
+
+function popUp() {
+  if ((list.innerHTML = " ")) {
+    list.innerHTML = `
+<li>
+     You have unread messages<p class="alert-close"> x</p></li>
+<li>
+     You have unread messages<p class="alert-close"> x</p></li>
+  `;
+  } else {
+    list.innerHTML = " ";
+  }
+}
+list.addEventListener("click", e => {
+  if (e.target.classList.contains("alert-close")) {
+    e.target.parentNode.remove();
+  }
 });
 
 // ============ MESSAGING ====================
