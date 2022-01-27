@@ -1,11 +1,20 @@
 /* ======= Main Nav =================== */
 .main-nav {
-  padding: 2px 40px;
+  padding: 5px 40px;
   display: flex;
   background-color: $secondary-color;
   grid-area: nav;
   justify-content: space-around;
+  align-items: center;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
 }
+
 .nav-icon {
   height: 7vh;
   fill: $accent-color;
@@ -17,7 +26,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 10px 15px;
+    padding: 10px;
   }
 
   .nav-icon {

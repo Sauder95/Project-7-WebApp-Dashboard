@@ -200,14 +200,24 @@ h2 span {
 /* ======= Main Nav =================== */
 /* line 2, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
 .main-nav {
-  padding: 2px 40px;
+  padding: 5px 40px;
   display: flex;
   background-color: #4d4c72;
   grid-area: nav;
   justify-content: space-around;
+  align-items: center;
 }
 
 /* line 9, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
+.main-nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 18, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
 .nav-icon {
   height: 7vh;
   fill: #f2f2f2;
@@ -215,14 +225,14 @@ h2 span {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 16, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
+  /* line 25, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
   .main-nav {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 10px 15px;
+    padding: 10px;
   }
-  /* line 23, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
+  /* line 32, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_mainNav.scss */
   .nav-icon {
     margin-top: 1rem;
   }
@@ -627,11 +637,10 @@ ul.link-bar {
 
 /* line 28, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
 #autoComplete.search-input::placeholder {
-  display: none;
   color: #777777;
 }
 
-/* line 33, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
+/* line 32, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
 .send-btn {
   width: 100%;
   background-color: #7477bf;
@@ -642,14 +651,14 @@ ul.link-bar {
 }
 
 @media (min-width: 768px) {
-  /* line 43, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
+  /* line 42, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
   #autoComplete.search-input {
     width: 97%;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 48, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
+  /* line 47, ../../GitHub/Project-7-WebApp-Dashboard/scss/components/_messenger.scss */
   #autoComplete.search-input {
     width: 95%;
   }

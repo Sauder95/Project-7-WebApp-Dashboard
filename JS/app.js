@@ -25,8 +25,6 @@ bell.addEventListener("click", () => {
 });
 
 // ============ DROP DOWN NOTIFICATIONS============\
-
-const container = document.querySelector(".bell-pop-box");
 const list = document.querySelector(".pop-up-list");
 
 function popUp() {
@@ -57,7 +55,7 @@ const send = document.querySelector(".send-btn");
 // import autoComplete from "@tarekraafat/autocomplete.js";
 
 const autoCompleteJS = new autoComplete({
-  placeHolder: "Search for Food...",
+  placeHolder: "Search for user...",
   data: {
     src: ["victoria chambers", "dale byrd", "dawn wood", "dan oliver"],
     cache: true,
